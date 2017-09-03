@@ -1,3 +1,7 @@
+---
+title: papers
+---
+
 (**\*** = co-first authorship)
 
 **WS DeWitt**, L Mesin, GD Victora, VN Minin, FA Matsen. *Using genotype abundance to improve phylogenetic inference.* [arXiv:1708.08944 [q-bio.PE]](https://arxiv.org/abs/1708.08944) (2017)
