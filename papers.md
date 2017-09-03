@@ -4,9 +4,9 @@
 
 **WS DeWitt**, KK Quan, D Wilburn, A Sherwood, M Vignali, SC De Rosa, CL Day, TJ Scriba, HS Robins, W Swanson, RO Emerson, C Seshadri. *Unbiased Definition Of A Shared T-Cell Receptor Motif Enables Population-Based Studies Of Tuberculosis.* [bioRxiv 123174](http://www.biorxiv.org/content/early/2017/04/03/123174) (2017)
 
-RO Emerson*, **WS DeWitt**<sup>*</sup>, M Vignali, J Gravley, JK Hu, EJ Osborne, C Desmarais, M Klinger, CS Carlson, JA Hansen, M Rieder, HS Robins. *Immunosequencing identifies signatures of cytomegalovirus exposure history and HLA-mediated effects on the T cell repertoire.* [Nature Genetics 49, 659–665](https://www.nature.com/ng/journal/v49/n5/abs/ng.3822.html) (2017)
+RO Emerson*, **WS DeWitt**<sup>\*</sup>, M Vignali, J Gravley, JK Hu, EJ Osborne, C Desmarais, M Klinger, CS Carlson, JA Hansen, M Rieder, HS Robins. *Immunosequencing identifies signatures of cytomegalovirus exposure history and HLA-mediated effects on the T cell repertoire.* [Nature Genetics 49, 659–665](https://www.nature.com/ng/journal/v49/n5/abs/ng.3822.html) (2017)
 
-**WS DeWitt**<sup>*</sup>, P Lindau<sup>*</sup>, TM Snyder<sup>*</sup>, AM Sherwood, M Vignali, CS Carlson, PD Greenberg, N Duerkopp, RO Emerson, HS Robins. *A Public Database of Memory and Naive B-Cell Receptor Sequences.* [PLoS ONE 11(8)](https://doi.org/10.1371/journal.pone.0160853) (2016)
+**WS DeWitt**<sup>*</sup>, P Lindau<sup>\*</sup>, TM Snyder<sup>*</sup>, AM Sherwood, M Vignali, CS Carlson, PD Greenberg, N Duerkopp, RO Emerson, HS Robins. *A Public Database of Memory and Naive B-Cell Receptor Sequences.* [PLoS ONE 11(8)](https://doi.org/10.1371/journal.pone.0160853) (2016)
 
 **WS DeWitt**, P Lindau, TM Snyder, M Vignali, RO Emerson, HS Robins. *Replicate Immunosequencing as a Robust Probe of B Cell Repertoire Diversity.* [arXiv:1410.0350 [q-bio.QM]](https://arxiv.org/abs/1410.0350) (2014)
 
