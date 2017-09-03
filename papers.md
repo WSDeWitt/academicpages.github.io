@@ -1,5 +1,6 @@
 ---
 title: papers
+layout: default
 ---
 
 (**\*** = co-first authorship)
