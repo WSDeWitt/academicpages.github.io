@@ -1,3 +1,0 @@
-# William Sumner DeWitt III
-
-
