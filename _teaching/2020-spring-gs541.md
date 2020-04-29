@@ -4,7 +4,7 @@ collection: teaching
 permalink: /teaching/2020-spring-gs541
 type: "module"
 venue: "University of Washington, Genome Sciences"
-date: June 2,4 2020
+date: 2020-06-02
 location: "Seattle, WA"
 ---
 
