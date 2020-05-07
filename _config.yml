@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "William S. DeWitt III"
+title                    : "@wsdewitt"
 title_separator          : "-"
 name                     : &name "William DeWitt"
 description              : &description "personal description"
