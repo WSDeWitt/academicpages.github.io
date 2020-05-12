@@ -13,7 +13,8 @@ name                     : &name "William DeWitt"
 description              : &description "personal description"
 url                      : https://wsdewitt.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "wsdewitt/wsdewitt.github.io"teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+repository               : "wsdewitt/wsdewitt.github.io"
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -82,10 +83,10 @@ author:
   name             : "William DeWitt"
   avatar           : "me.jpg"
   bio              : "PhD candidate with Kelley Harris and Erick Matsen"
-  location         : "Seattle, WA USA"
-  employer         : "UW Genome Sciences / Fred Hutch"
+  location         : "UW Genome Sciences"
+  employer         : "Fred Hutch"
   pubmed           :
-  googlescholar    : "http://scholar.google.com/citations?hl=en&user=P5fBJD0AAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=P5fBJD0AAAAJ&view_op=list_works&sortby=pubdate"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -102,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/0000-0002-6802-9139"
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -214,8 +215,8 @@ defaults:
       type: teaching
     values:
       layout: single
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
       comments: true
   # _publications
   - scope:
