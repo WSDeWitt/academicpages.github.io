@@ -13,13 +13,16 @@ Overview
 
 This is a module on population genetic inference for [Genome Sciences 541](https://noble.gs.washington.edu/~wnoble/genome541/).
 
-Population genetics is a powerful lens on the history of humans and other species, revealing a complex past of migration, replacement, admixture with archaic populations, and dramatic population size changes during and after range expansions.
+Population genetics is the study of genetic variation shared among individuals, populations and species.
+It is a powerful lens on the history of humans and other species, revealing a complex past of migration, replacement, admixture with archaic populations, and dramatic population size changes during and after range expansions.
 Germline mutation events in the history of a population give rise to variant alleles, and demographic histories are recorded in patterns of allele segregation within and between current-day populations.
 
 **Essay by Kelley Harris:** [Reading the genome like a history book](https://science.sciencemag.org/content/358/6368/1265.2.full)
 {: .notice--info}
 
-Genetic drift is shared when populations mix, it is private during periods of isolation, and the strength of drift is universally influenced by the population size history. Statistical methods for demographic inference—expressed in the framework of Kimura's diffusion or Kingman's coalescent—attempt to recover the effective population size history _N(t)_, where time _t_ is measured in years or generations before the present.
+_Genetic drift_ is the stochastic change in allele frequencies over time due to random outcomes of mutation and survival in a finite population.
+Genetic drift is shared when populations mix, it is private during periods of isolation, and the strength of drift is universally influenced by the population size history.
+Statistical methods for demographic inference—expressed in the framework of Kimura's diffusion or Kingman's coalescent—attempt to recover the effective population size history _N(t)_, where time _t_ is measured in years or generations before the present.
 
 **Review by Brian Charlesworth:** [Effective population size and patterns of molecular evolution and variation](https://www.nature.com/articles/nrg2526)
 {: .notice--info}
@@ -27,6 +30,8 @@ Genetic drift is shared when populations mix, it is private during periods of is
 <!-- Check dis[^foo]
 [^foo]: bar -->
 
+In the simplest settings, _demographic inference_ means inferring the effective population size history _N(t)_ for a single population, and thus identifying important events such as bottlenecks and range expansions.
+More complex models aim to jointly infer the histories of several populations, and include divergence, admixture, and migration between them.
 Demographic inference is a rapidly growing area of computational biology.
 The field is theoretically rooted in probabilistic population models that predate knowledge of the structure of DNA, but have become applicable---and worth improving---by the need to understand population-scale genome sequencing data.
 
