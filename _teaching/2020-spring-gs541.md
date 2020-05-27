@@ -6,6 +6,9 @@ type: "Module"
 venue: "University of Washington, Genome Sciences"
 date: 2020-06-02
 location: "Seattle, WA"
+toc: true
+toc_label: "Contents"
+toc_icon: "dna"
 ---
 
 Overview
@@ -58,5 +61,69 @@ Specifically, we will:
  1. Allele frequency spectra
  2. Distributions of shared haplotype lengths
  3. Coalescent HMMs
+
+
+Lectures
+===
+
+- [lecture 1 under construction]
+- [lecture 2 under construction]
+
+
+Homework
+===
+
+Problem 1: Variance in the coalescent
+---
+
+Suppose you are studying a diploid population with a given constant population size $N = 10,000$.
+You sequence 10 loci from each of 50 diploid individuals, so $n = 100$ samples for each locus.
+A "locus" is just a contiguous chunk of DNA sequence.
+Assume these 10 loci are unlinked, and no recombination happens within each locus.
+This means that there is an independent coalescent genealogy for each locus.
+Also suppose that each locus is about the same size, so they share a common mutatation rate $\mu=0.0001$ mutations per locus per generation.
+
+1. _(1 point)_ What is the expected TMRCA for any given locus?
+2. _(1 point)_ What is the expected number of segregating sites $S$ arising in one locus? Assume the loci are large enough so that the infinite sites approximation is reasonable (i.e. the number of segregating sites is equal to the number of historical mutation events).
+3. _(8 points)_ Based on our sequencing, we can measure $S$ for each locus.
+Suppose that we find one unusually high diversity locus with $S=1000$.
+Your collaborator suggests this high diversity is indicative of diversifying selection at this locus.
+To assess this, you will estimate the probability that at least one of the 10 measured $S$ values would be at least this high (i.e. a $p$-value), under the null hypothesis that these are just outcomes from the neutral coalescent process.
+
+    You will estimate this $p$-value by simulation.
+One round of simulation means simulating a value of $S$ for each of the 10 loci.
+Across many rounds of simulation, we can ask what fraction have a locus with $S\ge1000$.
+
+    To simulate one value of $S$:
+    - Generate a sequence of exponential random variables for the intercoalescent times $T_i$, with $i=100,99,\dots,2$.
+    - For each realized intercoalescent time $T_i=t_i$, generate a Poisson random variable for the number of mutations, where the Poisson mean is $it_i\mu$ ($i$ lineages persisting for $t_i$ generations gives a total branch length of $it_i$ in this interval).
+    - Add up the number of mutations simulated in each intercoalescent interval; this is your simulated $S$
+
+   Do you agree with your collaborator?
+
+### Hints
+- You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, ...
+- To simulate exponential and Poisson random variables (rvs) in Python, first import
+```python
+from scipy.stats import expon, poisson
+```
+To simulate an exponential rv with with rate `r` use
+```python
+expon.rvs(scale=1/r)
+```
+(note reciprocol!).
+To simulate a Poisson rv with mean `m` use
+```python
+poisson.rvs(m)
+```
+Similarly in R use
+```R
+rexp(1, r)
+```
+and
+```R
+rpois(1, m)
+```
+
 
 <!-- [link a section](#overview) -->
