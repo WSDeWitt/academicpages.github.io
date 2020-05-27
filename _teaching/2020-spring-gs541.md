@@ -22,7 +22,7 @@ Germline mutation events in the history of a population give rise to variant all
 
 _Genetic drift_ is the stochastic change in allele frequencies over time due to random outcomes of mutation and survival in a finite population.
 Genetic drift is shared when populations mix, it is private during periods of isolation, and the strength of drift is universally influenced by the population size history.
-Statistical methods for demographic inference—expressed in the framework of Kimura's diffusion or Kingman's coalescent—attempt to recover the effective population size history _N(t)_, where time _t_ is measured in years or generations before the present.
+Statistical methods for demographic inference—expressed in the framework of Kimura's diffusion or Kingman's coalescent—attempt to recover the effective population size history $N(t)$, where time $t$ is measured in years or generations before the present.
 
 **Review by Brian Charlesworth:** [Effective population size and patterns of molecular evolution and variation](https://www.nature.com/articles/nrg2526)
 {: .notice--info}
@@ -30,7 +30,7 @@ Statistical methods for demographic inference—expressed in the framework of Ki
 <!-- Check dis[^foo]
 [^foo]: bar -->
 
-In the simplest settings, _demographic inference_ means inferring the effective population size history _N(t)_ for a single population, and thus identifying important events such as bottlenecks and range expansions.
+In the simplest settings, _demographic inference_ means inferring the effective population size history $N(t)$ for a single population, and thus identifying important events such as bottlenecks and range expansions.
 More complex models aim to jointly infer the histories of several populations, and include divergence, admixture, and migration between them.
 Demographic inference is a rapidly growing area of computational biology.
 The field is theoretically rooted in probabilistic population models that predate knowledge of the structure of DNA, but have become applicable---and worth improving---by the need to understand population-scale genome sequencing data.
@@ -50,7 +50,7 @@ What can we do with demographic inference?
 
 Goals
 ---
-Our focus will be on how the effective population size history _N(t)_ shapes population genomic data.
+Our focus will be on how the effective population size history $N(t)$ shapes population genomic data.
 Specifically, we will:
 - extend the coalescent theory you learned in Trevor's module to accommodate recombining genomes
 - build intuition using simple calculations and simulations
