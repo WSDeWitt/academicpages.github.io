@@ -6,13 +6,13 @@ type: "Module"
 venue: "University of Washington, Genome Sciences"
 date: 2020-06-02
 location: "Seattle, WA"
-toc: true
-toc_label: "Contents"
-toc_icon: "dna"
 ---
 
+{% include base_path %}
+{% include toc %}
+
 Overview
-===
+---
 
 This is a module on population genetic inference for [Genome Sciences 541](https://noble.gs.washington.edu/~wnoble/genome541/).
 
@@ -41,9 +41,7 @@ The field is theoretically rooted in probabilistic population models that predat
 **Review by Josh Schraiber and Josh Akey:** [Methods and models for unravelling human evolutionary history](https://www.nature.com/articles/nrg4005)
 {: .notice--info}
 
-
 What can we do with demographic inference?
----
 - Reconstruct the natural history of our favorite species (if we can get our friends to sequence it)
 - Elucidate evolutionary forces that act in general cases
 - Inform species conservation efforts
@@ -51,11 +49,10 @@ What can we do with demographic inference?
 - Clarify interactions of human genomic variation and human health
 
 
-Goals
----
+### Goals
 Our focus will be on how the effective population size history $N(t)$ shapes population genomic data.
 Specifically, we will:
-- extend the coalescent theory you learned in Trevor's module to accommodate recombining genomes
+- extend the coalescent theory you learned in Trevor Bedford's module to accommodate recombining genomes
 - build intuition using simple calculations and simulations
 - learn about three statistical paradigms for inferring demographic history:
  1. Allele frequency spectra
@@ -64,17 +61,18 @@ Specifically, we will:
 
 
 Lectures
-===
+---
 
-- [lecture 1 under construction]
-- [lecture 2 under construction]
+### [lecture 1 under construction]
+### [lecture 2 under construction]
 
 
 Homework
-===
-
-Problem 1: Variance in the coalescent
 ---
+
+Please submit either a jupyter notebook for each problem, or scripts and output images and text files that are clearly named.
+
+### Problem 1: coalescent variance
 
 Suppose you are studying a diploid population with a given constant population size $N = 10,000$.
 You sequence 10 loci from each of 50 diploid individuals, so $n = 100$ samples for each locus.
@@ -101,9 +99,11 @@ Across many rounds of simulation, we can ask what fraction have a locus with $S\
 
    Do you agree with your collaborator?
 
-### Hints
-- You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, ...
-- To simulate exponential and Poisson random variables (rvs) in Python, first import
+**Hints**
+
+You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, ...
+
+To simulate exponential and Poisson random variables (rvs) in Python, first import
 ```python
 from scipy.stats import expon, poisson
 ```
@@ -111,12 +111,17 @@ To simulate an exponential rv with with rate `r` use
 ```python
 expon.rvs(scale=1/r)
 ```
-(note reciprocol!).
+
+**Warning:** note the reciprocal rate parameter above (called a "scale" parameter) used in `scipy`'s implementation
+\\[\nonumber{\rm scale}\equiv \frac{1}{\rm rate}\\]
+{: .notice--warning}
+
 To simulate a Poisson rv with mean `m` use
 ```python
 poisson.rvs(m)
 ```
-Similarly in R use
+
+Similarly, in R use
 ```R
 rexp(1, r)
 ```
@@ -124,6 +129,17 @@ and
 ```R
 rpois(1, m)
 ```
+
+
+### Problem 2: Inferring demographic history with a coalescent HMM
+
+[under construction]
+<!-- This problem leverages variability in coalescent time to make a probabilistic
+estimate about demographic history $N(t)$.
+By comparing two haplotypes (i.e. two homologous chromosomes in one
+diploid individual), the local sequence divergence between the two will vary
+across positions. -->
+
 
 
 <!-- [link a section](#overview) -->
