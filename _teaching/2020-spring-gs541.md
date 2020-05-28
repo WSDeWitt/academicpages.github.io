@@ -11,12 +11,10 @@ toc_label: "Contents"
 toc_icon: "dna"
 ---
 
-
+This is a module on population genetic inference for [Genome Sciences 541](https://noble.gs.washington.edu/~wnoble/genome541/), Spring quarter 2020.
 
 Overview
 ---
-
-This is a module on population genetic inference for [Genome Sciences 541](https://noble.gs.washington.edu/~wnoble/genome541/), Spring quarter 2020.
 
 Population genetics is the study of genetic variation shared among individuals, populations and species.
 It is a powerful lens on the history of humans and other species, revealing a complex past of migration, replacement, admixture with archaic populations, and dramatic population size changes during and after range expansions.
