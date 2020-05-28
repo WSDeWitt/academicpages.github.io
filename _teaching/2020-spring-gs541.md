@@ -64,8 +64,11 @@ Specifically, we will:
 Lectures
 ---
 
-### [lecture 1 under construction]
-### [lecture 2 under construction]
+### lecture 1 under construction
+{: .notice--danger}
+
+### lecture 2 under construction
+{: .notice--danger}
 
 
 Homework
@@ -83,9 +86,12 @@ This means that there is an independent coalescent genealogy for each locus.
 Also suppose that each locus is about the same size, so they share a common mutatation rate $\mu=0.0001$ mutations per locus per generation.
 
 **1.1** _(1 point)_ What is the expected TMRCA for any given locus?
+{: .notice--primary}
 
 **1.2** _(1 point)_ What is the expected number of segregating sites $S$ arising in one locus? Assume the loci are large enough so that the infinite sites approximation is reasonable (i.e. the number of segregating sites is equal to the number of historical mutation events).
+{: .notice--primary}
 
+<div class="notice--primary" markdown="1">
 **1.3** _(8 points)_ Based on our sequencing, we can measure $S$ for each locus.
 Suppose that we find one unusually high diversity locus with $S=1000$.
 Your collaborator suggests this high diversity is indicative of diversifying selection at this locus.
@@ -101,11 +107,15 @@ To simulate one value of $S$:
 - Add up the number of mutations simulated in each intercoalescent interval; this is your simulated $S$
 
 Do you agree with your collaborator?
+</div>
 
-**Hints**
+
+**Hints:**
 
 You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, ...
+{: .notice--success}
 
+<div class="notice--success" markdown="1">
 To simulate exponential and Poisson random variables (rvs) in Python, first import
 ```python
 from scipy.stats import expon, poisson
@@ -114,16 +124,17 @@ To simulate an exponential rv with with rate `r` use
 ```python
 expon.rvs(scale=1/r)
 ```
-
-**Warning:** note the reciprocal rate parameter above (called a "scale" parameter) used in `scipy`'s implementation
-\\[\nonumber{\rm scale}\equiv \frac{1}{\rm rate}\\]
-{: .notice--warning}
-
 To simulate a Poisson rv with mean `m` use
 ```python
 poisson.rvs(m)
 ```
 
+**Warning:** note the reciprocal rate parameter above (called a "scale" parameter) used in `scipy`'s implementation
+\\[\nonumber{\rm scale}\equiv \frac{1}{\rm rate}\\]
+{: .notice--warning}
+</div>
+
+<div class="notice--success" markdown="1">
 Similarly, in R use
 ```R
 rexp(1, r)
@@ -132,11 +143,13 @@ and
 ```R
 rpois(1, m)
 ```
+</div>
 
 
 ### Problem 2: inferring demographic history with a coalescent HMM
 
-[under construction]
+under construction
+{: .notice--danger}
 <!-- This problem leverages variability in coalescent time to make a probabilistic
 estimate about demographic history $N(t)$.
 By comparing two haplotypes (i.e. two homologous chromosomes in one
