@@ -21,14 +21,16 @@ Population genetics is the study of genetic variation shared among individuals, 
 It is a powerful lens on the history of humans and other species, revealing a complex past of migration, replacement, admixture with archaic populations, and dramatic population size changes during and after range expansions.
 Germline mutation events in the history of a population give rise to variant alleles, and demographic histories are recorded in patterns of allele segregation within and between current-day populations.
 
-**Essay by Kelley Harris:** [Reading the genome like a history book](https://science.sciencemag.org/content/358/6368/1265.2.full)
+**Essay:**
+K. Harris, *Reading the genome like a history book*. [Science 358, 1265 (2017).](https://science.sciencemag.org/content/358/6368/1265.2.full)
 {: .notice--info}
 
 _Genetic drift_ is the stochastic change in allele frequencies over time due to random outcomes of mutation and survival in a finite population.
 Genetic drift is shared when populations mix, it is private during periods of isolation, and the strength of drift is universally influenced by the population size history.
 Statistical methods for demographic inference—expressed in the framework of Kimura's diffusion or Kingman's coalescent—attempt to recover the effective population size history $N(t)$, where time $t$ is measured in years or generations before the present.
 
-**Review by Brian Charlesworth:** [Effective population size and patterns of molecular evolution and variation](https://www.nature.com/articles/nrg2526)
+**Review:**
+B. Charlesworth, *Fundamental concepts in genetics: effective population size and patterns of molecular evolution and variation*. [Nat. Rev. Genet. 10, 195–205 (2009).](https://www.nature.com/articles/nrg2526)
 {: .notice--info}
 
 <!-- Check dis[^foo]
@@ -39,7 +41,8 @@ More complex models aim to jointly infer the histories of several populations, a
 Demographic inference is a rapidly growing area of computational biology.
 The field is theoretically rooted in probabilistic population models that predate knowledge of the structure of DNA, but have become applicable---and worth improving---by the need to understand population-scale genome sequencing data.
 
-**Review by Josh Schraiber and Josh Akey:** [Methods and models for unravelling human evolutionary history](https://www.nature.com/articles/nrg4005)
+**Review:**
+J. G. Schraiber, J. M. Akey, *Methods and models for unravelling human evolutionary history*. [Nat. Rev. Genet. 16, 727–740 (2015).](https://www.nature.com/articles/nrg4005)
 {: .notice--info}
 
 What can we do with demographic inference?
@@ -74,7 +77,7 @@ Lectures
 Homework
 ---
 <div class="notice--primary" markdown="1">
-Please submit either:
+**Please submit either:**
 1. a Jupyter notebook for each problem (preferably exported to `html` or `pdf`)
 2. scripts, output images, and text files that are clearly named.
 </div>
@@ -113,12 +116,11 @@ Do you agree with your collaborator?
 </div>
 
 
-**Hints:**
+<div class="notice--success" markdown="1">
+**Hints**
 
 You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, ...
-{: .notice--success}
 
-<div class="notice--success" markdown="1">
 To simulate exponential and Poisson random variables (rvs) in Python, first import
 ```python
 from scipy.stats import expon, poisson
@@ -132,12 +134,11 @@ To simulate a Poisson rv with mean `m` use
 poisson.rvs(m)
 ```
 
-**Warning:** note the reciprocal rate parameter above (called a "scale" parameter) used in `scipy`'s implementation
+**Warning:**
+Note the reciprocal rate parameter above (called a "scale" parameter) used in `scipy`'s implementation
 \\[\nonumber{\rm scale}\equiv \frac{1}{\rm rate}\\]
 {: .notice--warning}
-</div>
 
-<div class="notice--success" markdown="1">
 Similarly, in R use
 ```R
 rexp(1, r)
@@ -204,11 +205,12 @@ Note the curly braces grab the python variable `i` for the terminal command
 </div>
 
 <div class="notice--info" markdown="1">
-**Original PSMC paper:** H. Li, R. Durbin, Inference of human population history from individual whole-genome sequences. [Nature 475, 493–496 (2011).](https://www.nature.com/articles/nature10231)
+**Original PSMC paper:**
+H. Li, R. Durbin, *Inference of human population history from individual whole-genome sequences*. [Nature 475, 493–496 (2011).](https://www.nature.com/articles/nature10231)
 
 There are several more cutting-edge coalescent HMM methods, such as MSMC and SMC++.
 Some might call PSMC deprecated; I call it classic.
 
 **Review of modern coalescent HMMs:**
-J. P. Spence, M. Steinrücken, J. Terhorst, Y. S. Song, _Inference of population history using coalescent HMMs: review and outlook_. [Curr Opin Genet Dev 53, 70–76 (2018).](http://dx.doi.org/10.1016/j.gde.2018.07.002)
+J. P. Spence, M. Steinrücken, J. Terhorst, Y. S. Song, *Inference of population history using coalescent HMMs: review and outlook*. [Curr Opin Genet Dev 53, 70–76 (2018).](http://dx.doi.org/10.1016/j.gde.2018.07.002)
 </div>
