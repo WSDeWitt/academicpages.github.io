@@ -49,6 +49,8 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+search: true
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -81,13 +83,12 @@ analytics:
 # Site Author
 author:
   name             : "William DeWitt"
-  avatar           : "me.jpg"
-  bio              : "PhD candidate with Kelley Harris and Erick Matsen"
-  location         : "UW Genome Sciences"
-  employer         : "Fred Hutch"
+  avatar           : "images/me.jpg"
+  bio              : "PhD candidate with [**Kelley Harris**](https://sites.google.com/site/harriskelley/home?authuser=0) (at UW Genome Sciences) and [**Erick Matsen**](https://matsen.fhcrc.org) (at Fred Hutch)"
+  location         : "Seattle, WA"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=P5fBJD0AAAAJ&view_op=list_works&sortby=pubdate"
-  email            :
+  email            : wsdewitt@uw.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -215,7 +216,7 @@ defaults:
       type: teaching
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       share: false
       comments: true
   # _publications
@@ -265,6 +266,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-include-cache
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -274,6 +276,10 @@ whitelist:
   - jemoji
 
 
+# remote_theme: "mmistakes/minimal-mistakes@4.19.2"
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"
+
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
@@ -281,9 +287,9 @@ whitelist:
 #  Path (examples)
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
+#  - <absolute_url>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <absolute_url/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <absolute_url/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/

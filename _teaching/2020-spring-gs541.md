@@ -6,10 +6,12 @@ type: "Module"
 venue: "University of Washington, Genome Sciences"
 date: 2020-06-02
 location: "Seattle, WA"
+author_profile: true
+layout: single
+toc: true
+toc_label: "Contents"
+toc_icon: "dna"
 ---
-
-{% include base_path %}
-{% include toc %}
 
 Overview
 ---
@@ -70,7 +72,7 @@ Lectures
 Homework
 ---
 
-Please submit either a jupyter notebook for each problem, or scripts and output images and text files that are clearly named.
+Please submit either a Jupyter notebook for each problem, or scripts and output images and text files that are clearly named.
 
 ### Problem 1: coalescent variance
 
@@ -81,23 +83,25 @@ Assume these 10 loci are unlinked, and no recombination happens within each locu
 This means that there is an independent coalescent genealogy for each locus.
 Also suppose that each locus is about the same size, so they share a common mutatation rate $\mu=0.0001$ mutations per locus per generation.
 
-1. _(1 point)_ What is the expected TMRCA for any given locus?
-2. _(1 point)_ What is the expected number of segregating sites $S$ arising in one locus? Assume the loci are large enough so that the infinite sites approximation is reasonable (i.e. the number of segregating sites is equal to the number of historical mutation events).
-3. _(8 points)_ Based on our sequencing, we can measure $S$ for each locus.
+**1.1** _(1 point)_ What is the expected TMRCA for any given locus?
+
+**1.2** _(1 point)_ What is the expected number of segregating sites $S$ arising in one locus? Assume the loci are large enough so that the infinite sites approximation is reasonable (i.e. the number of segregating sites is equal to the number of historical mutation events).
+
+**1.3** _(8 points)_ Based on our sequencing, we can measure $S$ for each locus.
 Suppose that we find one unusually high diversity locus with $S=1000$.
 Your collaborator suggests this high diversity is indicative of diversifying selection at this locus.
 To assess this, you will estimate the probability that at least one of the 10 measured $S$ values would be at least this high (i.e. a $p$-value), under the null hypothesis that these are just outcomes from the neutral coalescent process.
 
-    You will estimate this $p$-value by simulation.
+You will estimate this $p$-value by simulation.
 One round of simulation means simulating a value of $S$ for each of the 10 loci.
 Across many rounds of simulation, we can ask what fraction have a locus with $S\ge1000$.
 
-    To simulate one value of $S$:
-    - Generate a sequence of exponential random variables for the intercoalescent times $T_i$, with $i=100,99,\dots,2$.
-    - For each realized intercoalescent time $T_i=t_i$, generate a Poisson random variable for the number of mutations, where the Poisson mean is $it_i\mu$ ($i$ lineages persisting for $t_i$ generations gives a total branch length of $it_i$ in this interval).
-    - Add up the number of mutations simulated in each intercoalescent interval; this is your simulated $S$
+To simulate one value of $S$:
+- Generate a sequence of exponential random variables for the intercoalescent times $T_i$, with $i=100,99,\dots,2$.
+- For each realized intercoalescent time $T_i=t_i$, generate a Poisson random variable for the number of mutations, where the Poisson mean is $it_i\mu$ ($i$ lineages persisting for $t_i$ generations gives a total branch length of $it_i$ in this interval).
+- Add up the number of mutations simulated in each intercoalescent interval; this is your simulated $S$
 
-   Do you agree with your collaborator?
+Do you agree with your collaborator?
 
 **Hints**
 
@@ -131,7 +135,7 @@ rpois(1, m)
 ```
 
 
-### Problem 2: Inferring demographic history with a coalescent HMM
+### Problem 2: inferring demographic history with a coalescent HMM
 
 [under construction]
 <!-- This problem leverages variability in coalescent time to make a probabilistic
