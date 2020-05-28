@@ -73,8 +73,11 @@ Lectures
 
 Homework
 ---
-
-Please submit either a Jupyter notebook for each problem, or scripts and output images and text files that are clearly named.
+<div class="notice--primary" markdown="1">
+Please submit either:
+1. a Jupyter notebook for each problem
+2. scripts, output images, and text files that are clearly named.
+</div>
 
 ### Problem 1: coalescent variance
 
