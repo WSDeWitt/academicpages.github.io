@@ -201,7 +201,7 @@ Note the curly braces grab the python variable `i` for the terminal command
 </div>
 
 <div class="notice--info" markdown="1">
-**Original PSMC paper:** [H. Li, R. Durbin, Inference of human population history from individual whole-genome sequences. Nature 475, 493–496 (2011).](https://www.nature.com/articles/nature10231)
+**Original PSMC paper:** H. Li, R. Durbin, Inference of human population history from individual whole-genome sequences. [Nature 475, 493–496 (2011).](https://www.nature.com/articles/nature10231)
 
 There are several more cutting-edge coalescent HMM methods, such as MSMC and SMC++.
 Some might call PSMC deprecated; I call it classic.
