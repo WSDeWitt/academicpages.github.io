@@ -75,7 +75,7 @@ Homework
 ---
 <div class="notice--primary" markdown="1">
 Please submit either:
-1. a Jupyter notebook for each problem
+1. a Jupyter notebook for each problem (preferably exported to `html` or `pdf`)
 2. scripts, output images, and text files that are clearly named.
 </div>
 
