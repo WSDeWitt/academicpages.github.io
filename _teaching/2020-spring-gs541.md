@@ -9,6 +9,7 @@ layout: single
 toc: true
 toc_label: "Contents"
 toc_icon: "dna"
+toc_sticky: true
 ---
 
 This is a module on population genetic inference for [Genome Sciences 541](https://noble.gs.washington.edu/~wnoble/genome541/), Spring quarter 2020.
