@@ -148,14 +148,58 @@ rpois(1, m)
 
 ### Problem 2: inferring demographic history with a coalescent HMM
 
-under construction
-{: .notice--danger}
-<!-- This problem leverages variability in coalescent time to make a probabilistic
-estimate about demographic history $N(t)$.
-By comparing two haplotypes (i.e. two homologous chromosomes in one
-diploid individual), the local sequence divergence between the two will vary
-across positions. -->
+This problem leverages variability in coalescent time across regions of two haplotypes from a recombining population to estimate demographic history $N(t)$.
+
+Download [this VCF file]({{ site.url }}/teaching/2020-spring-gs541/variants.vcf), which contains variant calls for a 10Mb chromosome from 100 diploid individuals ($n = 200$).
+
+<div class="notice--info" markdown="1">
+**VCF file format:**
+The `POS` field indicates the (0-based) position of each variant in each chromosome.
+The individuals are named `tsk_0	tsk_1 ...`, and their phased genotypes are indicated as
+
+- `0/0`: homozygous for ancestral (i.e. non-mutant) allele
+- `0/1` or `1/0`: heterozygous for derived (i.e. mutant) allele
+- `1/1`: homozygous for derived allele
+
+Assume all other sites in the chromosome are homozygous ancestral (`0/0`) for all individuals.
+</div>
+
+**2.1** _(2 points)_ Compute and Plot the sample frequency spectrum (SFS).
+Use log scaling for both x and y axes.
+Does this look (qualitatively) like the SFS for a constant population history?
+Briefly explain why or why not.
+{: .notice--primary}
+
+**2.2** _(2 points)_ Compute the sequence divergence between the two haplotypes from individual `tsk_0` in 100 kB windows across the chromosome, and plot this.
+Produce a similar plot for the first 10 individuals `tsk_0 ... tsk_9`
+{: .notice--primary}
+
+**2.3** _(6 points)_ Use the Pairwise Sequential Markov Coalescent (PSMC) algorithm (see software notes below) to infer the demographic history $N(t)$ from each of the first 10 individuals `tsk_0 ... tsk_9`.
+Plot these 10 histories on the same axes.
+Briefly describe the event in the history of this population that gave rise to the SFS distortion.
+{: .notice--primary}
 
 
+<div class="notice--danger" markdown="1">
+**Software notes:**
+[under construction]
 
-<!-- [link a section](#overview) -->
+</div>
+
+<div class="notice--success" markdown="1">
+You can execute terminal commands (i.e. PSMC) in Jupyter notebook cells by beginning with the `!` character, e.g.
+```
+!echo foo > bar.txt
+```
+</div>
+
+
+**Original PSMC paper:** [H. Li, R. Durbin, Inference of human population history from individual whole-genome sequences. Nature 475, 493–496 (2011).](https://www.nature.com/articles/nature10231)
+{: .notice--info}
+
+There are several more cutting-edge coalescent HMM methods, such as MSMC and SMC++.
+Some might call PSMC deprecated; I call it classic.
+
+**Review of modern coalescent HMMs:**
+J. P. Spence, M. Steinrücken, J. Terhorst, Y. S. Song, _Inference of population history using coalescent HMMs: review and outlook_. [Curr Opin Genet Dev 53, 70–76 (2018).](http://dx.doi.org/10.1016/j.gde.2018.07.002)
+{: .notice--info}
