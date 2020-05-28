@@ -1,8 +1,0 @@
-docs_list_title: title of pages
-docs:
-
-- title: papers
-  url: papers.md
-  
-- title: contact
-  url: contact.md  
