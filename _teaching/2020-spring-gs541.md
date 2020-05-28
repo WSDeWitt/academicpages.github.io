@@ -187,19 +187,25 @@ Briefly describe the event in the history of this population that gave rise to t
 </div>
 
 <div class="notice--success" markdown="1">
+**Did you know?:**
 You can execute terminal commands (i.e. PSMC) in Jupyter notebook cells by beginning with the `!` character, e.g.
 ```
 !echo foo > bar.txt
 ```
+You can even loop them, mixing Python and terminal commands, e.g.
+```
+for i in range(10):
+  !echo {i} >> bar.txt
+```
+Note the curly braces grab the python variable `i` for the terminal command
 </div>
 
-
+<div class="notice--info" markdown="1">
 **Original PSMC paper:** [H. Li, R. Durbin, Inference of human population history from individual whole-genome sequences. Nature 475, 493–496 (2011).](https://www.nature.com/articles/nature10231)
-{: .notice--info}
 
 There are several more cutting-edge coalescent HMM methods, such as MSMC and SMC++.
 Some might call PSMC deprecated; I call it classic.
 
 **Review of modern coalescent HMMs:**
 J. P. Spence, M. Steinrücken, J. Terhorst, Y. S. Song, _Inference of population history using coalescent HMMs: review and outlook_. [Curr Opin Genet Dev 53, 70–76 (2018).](http://dx.doi.org/10.1016/j.gde.2018.07.002)
-{: .notice--info}
+</div>
