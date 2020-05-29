@@ -24,7 +24,7 @@ sidebar:
 ---
 
 Overview
-===
+---
 
 Population genetics is the study of genetic variation shared among individuals, populations and species.
 It is a powerful lens on the history of humans and other species, revealing a complex past of migration, replacement, admixture with archaic populations, and dramatic population size changes during and after range expansions.
@@ -61,8 +61,8 @@ What can we do with demographic inference?
 - Formulate richer null models for adaptive hypotheses
 - Clarify interactions of human genomic variation and human health
 
-Goals
----
+### Goals
+
 
 Our focus will be on how the effective population size history $N(t)$ shapes population genomic data.
 
@@ -77,27 +77,24 @@ Our focus will be on how the effective population size history $N(t)$ shapes pop
 </div>
 
 Lectures
-===
-
-lecture 1 under construction
 ---
+
+### lecture 1 under construction
 {: .notice--danger}
 
-lecture 2 under construction
----
+### lecture 2 under construction
 {: .notice--danger}
 
 
 Homework
-===
+---
 <div class="notice--success" markdown="1">
 **Please submit either:**
 1. a Jupyter notebook for each problem (preferably exported to `html` or `pdf`)
 2. scripts, output images, and text files that are clearly named.
 </div>
 
-Problem 1: variance in the coalescent
----
+### Problem 1: variance in the coalescent
 
 Suppose you are studying a diploid population with a given constant population size $N = 10,000$.
 You sequence 10 loci from each of 50 diploid individuals, so $n = 100$ samples for each locus.
@@ -131,9 +128,9 @@ To simulate one value of $S$:
 Do you agree with your collaborator?
 </div>
 
-### Software notes
+#### Software notes
 
-#### Exponential and Poisson random variables in Python
+##### Exponential and Poisson random variables in Python
 
 <div class="notice--primary" markdown="1">
 First import
@@ -156,7 +153,7 @@ Note the reciprocal rate parameter above (called a "scale" parameter) used in `s
 
 </div>
 
-#### Exponential and Poisson random variables in R
+##### Exponential and Poisson random variables in R
 
 <div class="notice--primary" markdown="1">
 For exponential
@@ -170,7 +167,7 @@ rpois(1, m)
 The first argument `1` indicates that you want one such rv.
 </div>
 
-### References
+#### References
 
 The lectures will contain everything you need to solve the homework problems, but here are a few optional resources.
 
@@ -182,8 +179,7 @@ J. Wakeley, *Coalescent Theory: an Introduction*. [First Edition. Macmillan. (20
 N. A. Rosenberg, M. Nordborg, *Genealogical trees, coalescent theory and the analysis of genetic polymorphisms*. [Nat. Rev. Genet. 3, 380–390 (2002).](https://www.nature.com/articles/nrg795)
 {: .notice--info}
 
-Problem 2: inferring demographic history with a coalescent HMM
----
+### Problem 2: inferring demographic history with a coalescent HMM
 
 This problem leverages variability in coalescent time across regions of two haplotypes from a recombining population to estimate demographic history $N(t)$.
 
@@ -217,9 +213,9 @@ Briefly describe the event in the history of this population that gave rise to t
 {: .notice--success}
 
 
-### Software notes
+#### Software notes
 
-#### Pairwise Sequential Markov coalescent (PSMC)
+##### Pairwise Sequential Markov coalescent (PSMC)
 
 <div class="notice--primary" markdown="1">
 **Install [PSMC](https://github.com/lh3/psmc):**
@@ -286,7 +282,7 @@ This is described in the section `APPENDIX I: Scaling the PSMC output` of the PS
 Assume a mutation rate of $\mu=10^{-8}$.
 </div>
 
-#### Terminal commands in Jupyter cells
+##### Terminal commands in Jupyter cells
 
 <div class="notice--primary" markdown="1">
 You may find it convenient to execute terminal commands (i.e. PSMC) in Jupyter notebooks by beginning the cell with the `!` character, e.g.
@@ -301,7 +297,7 @@ for i in range(10):
 Note the curly braces grab the python variable `i` for the terminal command.
 </div>
 
-### References
+#### References
 
 **Original PSMC paper:**
 H. Li, R. Durbin, *Inference of human population history from individual whole-genome sequences*. [Nature 475, 493–496 (2011).](https://www.nature.com/articles/nature10231)
