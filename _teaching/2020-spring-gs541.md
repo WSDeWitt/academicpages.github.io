@@ -20,7 +20,7 @@ sidebar:
     image: teaching/2020-spring-gs541/logo.png
     text: "A unit for [GENOME 541](https://noble.gs.washington.edu/~wnoble/genome541/), Spring 2020, University of Washington"
   - title: "Instructor: Will DeWitt"
-    # text: "another title"
+    text: "Email: [wsdewitt@uw.edu](mailto:wsdewitt@uw.edu)"
 ---
 
 Overview
