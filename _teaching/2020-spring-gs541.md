@@ -113,19 +113,16 @@ Also suppose that each locus is about the same size, so they share a common muta
 **1.3** _(8 points)_ Based on our sequencing, we can measure $S$ for each locus.
 Suppose that we find one unusually high diversity locus with $S=1000$.
 Your collaborator suggests this high diversity is indicative of diversifying selection at this locus.
-To assess this, you will estimate the probability that at least one of the 10 measured $S$ values would be at least this high (i.e. a $p$-value), under the null hypothesis that these are just outcomes from the neutral coalescent process.
 
-You will estimate this $p$-value by simulation (see [software notes](#software-notes) below).
-One round of simulation means simulating a value of $S$ for each of the 10 loci.
-Across many rounds of simulation, we can ask what fraction have a locus with $S\ge1000$.
-
-You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, etc.
-To simulate one value of $S$:
-- Generate a sequence of exponential random variables for the intercoalescent times $T_i$, with $i=100,99,\dots,2$.
-- For each realized intercoalescent time $T_i=t_i$, generate a Poisson random variable for the number of mutations, where the Poisson mean is $it_i\mu$ ($i$ lineages persisting for $t_i$ generations gives a total branch length of $it_i$ in this interval).
-- Add up the number of mutations simulated in each intercoalescent interval; this is your simulated $S$
+To assess this claim, estimate the probability that at least one of the 10 measured $S$ values would be at least this high (i.e. a $p$-value), under the null hypothesis that these are just outcomes from the neutral coalescent process.
 
 Do you agree with your collaborator?
+
+**Hints**
+- You will estimate this $p$-value by simulation (see [software notes](#software-notes) below).
+- One round of simulation means simulating a value of $S$ for each of the 10 loci.
+- Across many rounds of simulation, we can ask what fraction have a locus with $S\ge1000$.
+- You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, etc., and the number of mutations arising in each intercoalescent interval.
 </div>
 
 #### Software notes
