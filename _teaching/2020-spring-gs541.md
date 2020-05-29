@@ -183,11 +183,11 @@ Download [this VCF file]({{ site.url }}/teaching/2020-spring-gs541/variants.vcf)
 <div class="notice--info" markdown="1">
 **VCF file format:**
 The `POS` field indicates the (0-based) position of each variant in each chromosome.
-The individuals are named `tsk_0	tsk_1 ...`, and their phased genotypes are indicated as
+The individuals are named `tsk_0	tsk_1 ...`, and their phased genotypes for each variant are indicated as
 
 - `0|0`: homozygous for ancestral (i.e. non-mutant) allele
-- `0|1` or `1|0`: heterozygous for derived (i.e. mutant) allele
-- `1|1`: homozygous for derived allele
+- `1|1`: homozygous for derived  (i.e. mutant) allele
+- `0|1` or `1|0`: heterozygous
 
 Note that the VCF file does not contain entries for non-segregating sites.
 </div>
