@@ -122,7 +122,7 @@ Do you agree with your collaborator?
 - You will estimate this $p$-value by simulation (see [software notes](#software-notes) below).
 - One round of simulation means simulating a value of $S$ for each of the 10 loci.
 - Across many rounds of simulation, we can ask what fraction have a locus with $S\ge1000$.
-- You don't need to simulate the topology of the coalescent trees, only the time until the first event, then until second event, etc., and the number of mutations arising in each intercoalescent interval.
+- You don't need to simulate the topology of the coalescent trees, only the (exponentially distributed) time until the first event, then until second event, etc., and the (Poisson-distributed) number of mutations arising in each intercoalescent interval.
 </div>
 
 #### Software notes
