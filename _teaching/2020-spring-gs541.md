@@ -1,18 +1,27 @@
 ---
-title: "Genome Sciences 541: Population genetic inference"
+# empty title, since we have the custom sidebar for that
+title: "GS 541: population genetic inference"
 collection: teaching
 permalink: /teaching/2020-spring-gs541
 date: 2020-06-02
 location: "Seattle, WA"
-author_profile: true
+author_profile: false
 layout: single
+
+# table of contents
 toc: true
 toc_label: "Contents"
 toc_icon: "dna"
 toc_sticky: true
----
 
-This is a module on population genetic inference for [Genome Sciences 541](https://noble.gs.washington.edu/~wnoble/genome541/), Spring quarter 2020.
+# custom sidebar
+sidebar:
+  - title: "GS 541: population genetic inference"
+    image: teaching/2020-spring-gs541/logo.png
+    text: "A unit for [GENOME 541](https://noble.gs.washington.edu/~wnoble/genome541/), Spring 2020, University of Washington"
+  - title: "Instructor: Will DeWitt"
+    # text: "another title"
+---
 
 Overview
 ===
@@ -59,7 +68,7 @@ Our focus will be on how the effective population size history $N(t)$ shapes pop
 
 <div class="notice--primary" markdown="1">
 **Specifically:**
-- extend the coalescent theory you learned in Trevor Bedford's module to accommodate recombining genomes
+- extend the coalescent theory you learned in Trevor Bedford's unit to accommodate recombining genomes
 - build intuition using simple calculations and simulations
 - learn about three statistical paradigms for inferring demographic history:
  1. Allele frequency spectra
@@ -267,7 +276,7 @@ CC	  DC  begin end best-k t_k+\Delta_k max-prob
 CC
 ```
 The values `t_k` and `\lambda_k` on the `RS` lines correspond to times (into the past) and population size, respectively---this represents the $N(t)$ that we're after.
-Iterations of the algorithm print output in blocks separate by a line
+Iterations of the algorithm print output in blocks separated by a line like
 ```
 //
 ```
