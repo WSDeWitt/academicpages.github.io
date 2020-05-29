@@ -3,7 +3,7 @@
 title: "GS 541: population genetic inference"
 collection: teaching
 permalink: /teaching/2020-spring-gs541
-date: 2020-06-02
+#date: 2020-06-02
 location: "Seattle, WA"
 author_profile: false
 layout: single
