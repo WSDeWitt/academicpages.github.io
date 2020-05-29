@@ -215,7 +215,7 @@ Briefly describe the event in the history of this population that gave rise to t
 
 #### Software notes
 
-##### Pairwise Sequential Markov coalescent (PSMC)
+##### Pairwise Sequential Markov Coalescent (PSMC)
 
 <div class="notice--primary" markdown="1">
 **Install [PSMC](https://github.com/lh3/psmc):**
