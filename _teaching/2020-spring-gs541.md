@@ -1,6 +1,6 @@
 ---
 # empty title, since we have the custom sidebar for that
-title: "GS 541: population genetic inference"
+title: "GENOME 541: population genetic inference"
 collection: teaching
 permalink: /teaching/2020-spring-gs541
 #date: 2020-06-02
@@ -16,7 +16,7 @@ toc_sticky: true
 
 # custom sidebar
 sidebar:
-  - title: "GS 541: population genetic inference"
+  - title: "GENOME 541: population genetic inference"
     image: teaching/2020-spring-gs541/logo.png
     text: "A unit for [GENOME 541](https://noble.gs.washington.edu/~wnoble/genome541/), Spring 2020, University of Washington"
   - title: "Instructor: Will DeWitt"
