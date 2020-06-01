@@ -57,8 +57,9 @@ J. G. Schraiber, J. M. Akey, *Methods and models for unravelling human evolution
 What can we do with demographic inference?
 - Reconstruct the natural history of our favorite species (if we can get our friends to sequence it)
 - Elucidate evolutionary forces that act in general cases
-- Inform species conservation efforts
 - Formulate richer null models for adaptive hypotheses
+- Learn about epidemic spread (as you saw last week)
+- Inform species conservation efforts
 - Clarify interactions of human genomic variation and human health
 
 ### Goals
