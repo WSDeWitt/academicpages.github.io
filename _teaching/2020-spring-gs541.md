@@ -82,7 +82,7 @@ Lectures
 
 ### I: [The coalescent (again)]({{ site.url }}/teaching/2020-spring-gs541/lecture1/index.html)
 
-### II: Coalescent inference for recombining genomes
+### II: [Coalescent inference for recombining genomes]({{ site.url }}/teaching/2020-spring-gs541/lecture2/index.html)
 
 
 Homework
