@@ -80,9 +80,9 @@ Our focus will be on how the effective population size history $N(t)$ shapes pop
 Lectures
 ---
 
-### I: [The coalescent (again)]({{ site.url }}/teaching/2020-spring-gs541/lecture1/index.html)
+### I: The coalescent (again) ([html]({{ site.url }}/teaching/2020-spring-gs541/lecture1/index.html), [pdf]({{ site.url }}/teaching/2020-spring-gs541/lecture1.pdf))
 
-### II: [Coalescent inference for recombining genomes]({{ site.url }}/teaching/2020-spring-gs541/lecture2/index.html)
+### II: Coalescent inference for recombining genomes ([html]({{ site.url }}/teaching/2020-spring-gs541/lecture2/index.html), [pdf]({{ site.url }}/teaching/2020-spring-gs541/lecture2.pdf))
 
 
 Homework
