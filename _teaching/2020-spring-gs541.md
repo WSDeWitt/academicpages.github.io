@@ -100,7 +100,7 @@ You sequence 10 loci from each of 50 diploid individuals, so $n = 100$ samples f
 A "locus" is just a contiguous chunk of DNA sequence.
 Assume these 10 loci are unlinked, and no recombination happens within each locus.
 This means that there is an independent coalescent genealogy for each locus.
-Also suppose that each locus is about the same size, so they share a common mutatation rate $\mu=0.0001$ mutations per locus per generation.
+Also suppose that each locus is about the same size, so they share a common mutatation rate $\mu=0.003$ mutations per locus per generation.
 
 **1.1** _(1 point)_ What is the expected TMRCA for any given locus?
 {: .notice--success}
