@@ -276,7 +276,11 @@ Iterations of the algorithm print output in blocks separated by a line like
 Use only the last such block (the final iteration).
 The values of `t_k` and `\lambda_k` must be rescaled using an estimate of the mutation rate to get them in units of generations and individuals, respectively.
 This is described in the section `APPENDIX I: Scaling the PSMC output` of the PSMC README file.
-Assume a mutation rate of $\mu=10^{-8}$.
+Assume a mutation rate of `mu = 1e-8`, and a bin size `s = 1`, so the equation in that section reads
+```
+N_0 = theta_0 / (4 * mu)
+```
+(note the backslashes in the PSMC equation are not division symbols).
 </div>
 
 ##### Terminal commands in Jupyter cells
